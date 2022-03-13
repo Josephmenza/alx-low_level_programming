@@ -1,24 +1,16 @@
 #include <stdio.h>
-/**
- * main - displays all lower and upper case alphabets in ascending order
- * Return: 0 if exited properly, non-zero otherwise
-*/
-int main(void)
-{
-	int ch;
+#include <stdlib.h>
 
-	for (ch = 'a'; ch <= 'z'; ch++)
-	{
-	if (ch == 'q')
-	{
-	continue;
-	}
-	if (ch == 'e')
-	{
-	continue;
-	}
-	putchar(ch);
-	}
-	putchar(10);
-	return (0);
+int main()
+{
+    char charactername[] = "John";
+    int characterage = 35;
+    printf("There onece was a man named %s\n", charactername);
+    printf("he was %d years old.\n", characterage);
+    characterage = 50;
+    charactername[] = "John";
+    printf("he realy liked the name %s\n", charactername);
+    printf("but did not like being %d.\n", characterage);
+
+    return 0;
 }
