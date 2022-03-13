@@ -1,16 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-int main()
+/**
+ * main - displays the integers from 0 to 9
+ * Return: 0 if exited properly, non-zero otherwise
+*/
+int main(void)
 {
-    char charactername[] = "John";
-    int characterage = 35;
-    printf("There onece was a man named %s\n", charactername);
-    printf("he was %d years old.\n", characterage);
-    characterage = 50;
-    charactername[] = "John";
-    printf("he realy liked the name %s\n", charactername);
-    printf("but did not like being %d.\n", characterage);
+	int ch;
 
-    return 0;
+	for (ch = 0; ch <= 9; ch++)
+	{
+	printf("%d", ch);
+	}
+	putchar(10);
+	return (0);
 }
