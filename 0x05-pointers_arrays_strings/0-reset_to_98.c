@@ -1,17 +1,14 @@
-#include "main.h"
+#include "holberton.h"
+/**
+ * reset_to_98 - reset argument to 98
+ * @n: pointer
+ * Return: void
+*/
 
-/*reset the value to 98
- *@n the value which is going to be reseted
- *@*p is the pointer address
- */
-int main(void)
+void reset_to_98(int *n)
 {
-    int n;
-     n = 5;
-    printf("n=%d\n", n);
-    int *p=&n;
-    *p=98;
-    printf("n=%d\n", n);
-    return (0);
+
+*n = 98;
+
 }
 
