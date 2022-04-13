@@ -7,16 +7,13 @@
  * @d: dog struct
  */
 
-
-int main(void)
+void print_dog(struct dog *d)
 {
-struct dog*d
- dog=*d("jacky", 9, "belete")
- if(user==null)
- return(1);
-printf("name %s created !/n",*d->name);
-printf("age %d year old !/n",*d->age);
-printf("owner %s the owner !/n",*d->owner)
-return(0);
- 
+if (d != NULL)
+{
+	printf("Name: %s\nAge: %f\nOwner: %s\n",
+	(*d).name != NULL ? d->name : "(nil)",
+	(*d).age,
+	(*d).owner != NULL ? d->owner : "(nil)");
+}
 }
